@@ -1,0 +1,43 @@
+/* Fonts */
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto Regular'), local('RobotoRegular'),
+    url(../fonts/roboto.woff2) format('woff2'),
+    url(../fonts/roboto.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('RobotoMedium'),
+    url(../fonts/robotomedium.woff2) format('woff2'),
+    url(../fonts/robotomedium.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('RobotoBold'),
+    url(../fonts/robotobold.woff2) format('woff2'),
+    url(../fonts/robotobold.woff) format('woff');
+}
+
+/* Variables */
+:root {
+  --basic-text: #ffffff;
+  --dark-text: #323232;
+  --gray-text: #5a5a5a;
+  --placeholder-text: #999999;
+  --link-hover-mute: #ffbc9e;
+  --link-hover-bright: #e84d37;
+  --nav-bg-focus: #ededed;
+  --nav-bg-active: #d07058;
+  --submenu-bg-hover: #fbded7;
+  --submenu-bg-focus: #f6b5a5;
+  --submenu-bg-active: #d07058;
+}
