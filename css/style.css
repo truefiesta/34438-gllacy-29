@@ -137,6 +137,25 @@ a {
   line-height: 60px;
 }
 
+.breadcrums {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrums a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: var(--light-text);
+}
+
+.breadcrums a:hover,
+.breadcrums a:focus {
+  color: var(--link-hover-mute);
+}
+
 .button {
   display: inline-block;
   padding: 10px;
@@ -170,9 +189,38 @@ a {
   line-height: 44px;
 }
 
-.promo {
+.pagination-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pagination-item a {
+  display: block;
+  min-width: 26px;
+  min-height: 26px;
+  border-radius: 50%;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+
   color: var(--light-text);
+}
+
+.pagination-item a:hover {
+  background-color: var(--bg-white-light);
+}
+
+.pagination-item a:active {
+  background-color: var(--light-text);
+  color:var(--dark-text);
+}
+
+.promo {
   font-weight: 700;
+  color: var(--light-text);
 }
 
 .promo-banner-title {
