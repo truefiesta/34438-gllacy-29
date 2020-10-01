@@ -45,6 +45,7 @@
   --bg-violet: #8996a6;
   --bg-brown: #9d8b84;
   --bg-white-light: rgba(255, 255, 255, 0.2);
+  --bg-subscription: #f8f7f4;
 }
 
 /* Global */
@@ -426,7 +427,12 @@ a {
 }
 
 .info {
+  background-color: lightgoldenrodyellow;
+  background-image: url(../img/pattern.png);
+  background-repeat: repeat;
   color: var(--dark-text);
+  padding: 20px;
+  border-radius: 16px;
 }
 
 .info-title {
@@ -441,24 +447,75 @@ a {
   margin: 0;
 }
 
-.info-item p {
+.info-item-text {
+  position: relative;
   padding: 0;
+  padding-left: 50px;
   margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
 }
 
+.info-item-text::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 49px;
+  height: 49px;
+  background-size: cover;
+}
+
+.info-icon1::before {
+  background-image: url(../img/icon1.svg);
+}
+
+.info-icon2::before {
+  background-image: url(../img/icon2.svg);
+}
+
+.info-icon3::before {
+  background-image: url(../img/icon3.svg);
+}
+
+.info-icon4::before {
+  background-image: url(../img/icon4.svg);
+}
+
+.index-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+}
+
 .blog {
   color: var(--dark-text);
+  position: relative;
+}
+
+.blog-post-img-container {
+  width: 560px;
+  height: 220px;
+  border-radius: 16px;
+  overflow: hidden;
 }
 
 .blog-title {
   margin: 0;
+  position: absolute;
+  top: 20px;
+  left: 20px;
 
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
+}
+
+.blog-post-title {
+  position: absolute;
+  top: 50px;
+  left: 20px;
 }
 
 .blog-post,
@@ -473,6 +530,11 @@ a {
   border-bottom: 1px solid var(--dark-text);
 }
 
+.subscription {
+  background-color: var(--bg-subscription);
+  border-radius: 16px;
+}
+
 .subscription p {
   color: var(--gray-text)
 }
@@ -483,6 +545,29 @@ a {
 
 .contacts {
   color: var(--dark-text);
+}
+
+.map {
+  height: 430px;
+  background-color: var(--light-text);
+}
+
+.map-container {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.map-contact-details {
+  box-sizing: border-box;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 303px;
+  height: 306px;
+  background: var(--light-text);
+  padding: 20px;
+  border-radius: 16px;
 }
 
 .map-contact-details p {
