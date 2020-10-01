@@ -345,8 +345,22 @@ a {
 }
 
 .promo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
   font-weight: 700;
   color: var(--light-text);
+  background-repeat: no-repeat;
+}
+
+.promo-banner1 {
+  background-image: url(../img/chocolate_bg.jpg);
+  background-color: rgb(63, 33, 12);
+}
+
+.promo-banner2 {
+  background-image: url(../img/raspberry_bg.jpg);
+  background-color: rgb(107, 18, 18);
 }
 
 .promo-banner-title {
@@ -368,21 +382,42 @@ a {
 }
 
 .products-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 26px;
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.products-list li {
+  display: grid;
+  grid-template-rows: 1fr min-content min-content;
 }
 
 .product-card-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
+  order: 2;
+}
+
+.product-card-img {
+  order: 1;
+  width: 266px;
+  height: 266px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .product-card-price {
   font-weight: 700;
   font-size: 45px;
   line-height: 45px;
+}
+
+.product-card-link {
+  order: 3;
 }
 
 .product-card-price span {
